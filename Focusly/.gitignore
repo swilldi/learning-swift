@@ -1,0 +1,13 @@
+# Сборка
+.build/
+DerivedData/
+.swiftpm/
+*.xcuserstate
+xcuserdata/
+
+# macOS
+.DS_Store
+
+# Локальные настройки агента
+.claude/settings.local.json
+.claude/mentor-off
