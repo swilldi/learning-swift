@@ -5,7 +5,7 @@
 Практика необязательна, но засчитывается отдельно.
 
 ## Урок 0. Окружение и наставник
-- [ ] Xcode-проект `Focusly/Focusly.xcodeproj` создан, приложение запускается по ⌘R
+- [x] Xcode-проект `Focusly/Focusly.xcodeproj` создан, приложение запускается по ⌘R
 - [ ] Пакет `FocuslyCore` создан в Xcode рядом с `Focusly`, в `Package.swift` есть `.macOS(.v15)`
 - [ ] Библиотека `FocuslyCore` подключена к таргету `Focusly`
 - [ ] `./scripts/check.sh` полностью зелёный
