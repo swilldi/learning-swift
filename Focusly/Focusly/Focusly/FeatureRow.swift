@@ -10,12 +10,10 @@ import SwiftUI
 struct FeatureRow: View {
     let title: String
     let systemImage: String
-    
+
     var body: some View {
-        HStack {
-            Label(title, systemImage: systemImage)
-                .frame(maxWidth: .infinity, alignment: .center)
-        }
+        Label(title, systemImage: systemImage)
+            .frame(maxWidth: .infinity, alignment: .center)
     }
 }
 

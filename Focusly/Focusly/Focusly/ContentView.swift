@@ -17,23 +17,18 @@ struct ContentView: View {
                 .font(.largeTitle.bold())
             Text("Фокус на одной задаче за раз")
                 .foregroundStyle(.secondary)
-            
-            
+
             FeatureRow(title: "Задачи", systemImage: "list.clipboard")
             FeatureRow(title: "Таймер", systemImage: "timer")
             FeatureRow(title: "Статистика", systemImage: "chart.bar.xaxis")
-            
+
             Badge(text: "Смотрим на различные положения модификаторов")
         }
         .padding(40)
         .frame(minWidth: 480, minHeight: 320)
-        
+
     }
 }
-
-
-
-
 
 #Preview {
     ContentView()

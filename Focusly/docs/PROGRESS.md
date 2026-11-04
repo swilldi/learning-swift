@@ -6,20 +6,20 @@
 
 ## Урок 0. Окружение и наставник
 - [x] Xcode-проект `Focusly/Focusly.xcodeproj` создан, приложение запускается по ⌘R
-- [ ] Пакет `FocuslyCore` создан в Xcode рядом с `Focusly`, в `Package.swift` есть `.macOS(.v15)`
-- [ ] Библиотека `FocuslyCore` подключена к таргету `Focusly`
-- [ ] `./scripts/check.sh` полностью зелёный
+- [x] Пакет `FocuslyCore` создан в Xcode рядом с `Focusly`, в `Package.swift` есть `.macOS(.v15)`
+- [x] Библиотека `FocuslyCore` подключена к таргету `Focusly`
+- [x] `./scripts/check.sh` полностью зелёный
 - Практика: [ ] 1 [ ] 2
 
 ## Урок 1. Анатомия SwiftUI-приложения
-- [ ] Приветственный экран вместо «Hello, world!»
-- [ ] Свой компонент с параметрами и `#Preview`
-- Практика: [ ] 1 [ ] 2 [ ] 3*
+- [x] Приветственный экран вместо «Hello, world!»
+- [x] Свой компонент с параметрами и `#Preview`
+- Практика: [ ] 1 [x] 2 [x] 3*
 
 ## Урок 2. Модель: структуры, инкапсуляция, тесты
-- [ ] `FocusTask` в ядре, публичный API, `private(set) completedPomodoros`
-- [ ] Тесты `FocusTask` зелёные
-- Практика: [ ] 1 [ ] 2 [ ] 3*
+- [x] `FocusTask` в ядре, публичный API, `private(set) completedPomodoros`
+- [x] Тесты `FocusTask` зелёные
+- Практика: [x] 1 [x] 2 [ ] 3*
 
 ## Урок 3. Состояние: @State, @Binding, списки
 - [ ] Добавление задачи кнопкой и Return, пустую добавить нельзя

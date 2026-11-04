@@ -11,8 +11,9 @@ struct Badge: View {
     let text: String
     var body: some View {
         Text(text)
-            .background(.green)
             .padding()
+            .background(.green)
+            .clipShape(.capsule)
     }
 }
 

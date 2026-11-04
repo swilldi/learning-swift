@@ -14,5 +14,6 @@ struct FocuslyApp: App {
             ContentView()
         }
         .defaultSize(width: 900, height: 600)
+
     }
 }
