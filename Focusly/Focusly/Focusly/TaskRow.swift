@@ -9,12 +9,14 @@ import FocuslyCore
 import SwiftUI
 
 struct TaskRow: View {
-    @Binding var task: FocusTask
+    let task: FocusTask
+    let onToggle: () -> Void
 
     var body: some View {
         HStack {
-            Toggle("Выполнено", isOn: $task.isDone)
-                .labelsHidden()
+            Button(action: onToggle) {
+                Image(systemName: task.isDone ? "checkbox.circle.fill" : "circle")
+            }
             Text(task.title)
                 .strikethrough(task.isDone)
             Spacer()
@@ -25,14 +27,8 @@ struct TaskRow: View {
     }
 }
 
-#Preview(".constant") {
-    TaskRow(task: .constant(FocusTask(title: "A")))
-}
+#Preview {
+    var task = FocusTask(title: "A")
 
-#Preview("@Previewable") {
-    @Previewable @State var task = FocusTask(
-        title: "A"
-    )
-
-    TaskRow(task: $task)
+    TaskRow(task: task, onToggle: { task.isDone.toggle() })
 }
