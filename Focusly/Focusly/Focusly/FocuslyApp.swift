@@ -11,7 +11,7 @@ import SwiftUI
 struct FocuslyApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TaskListDraftView()
         }
         .defaultSize(width: 900, height: 600)
 

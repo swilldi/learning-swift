@@ -37,18 +37,18 @@ struct FocusTaskTests {
         try #require(task.completedPomodoros > task.estimate)
         #expect(task.progress == 1)
     }
-    
+
     @Test func completetBelowEstimate() {
         let task = FocusTask(title: "A", estimate: 1)
         #expect(task.isOverEstimate == false)
     }
-    
+
     @Test func completetEqualEstimate() {
         var task = FocusTask(title: "A", estimate: 1)
         task.registerPomodoro()
         #expect(task.isOverEstimate == false)
     }
-    
+
     @Test func completetAboveEstimate() {
         var task = FocusTask(title: "A", estimate: 1)
         task.registerPomodoro()
